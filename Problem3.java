@@ -1,10 +1,10 @@
 public class Problem3{
 	public static void main(String args[]){
-	/*The prime factors of 13195 are 5, 7, 13 and 29.
-	What is the largest prime factor of the number 600851475143 ?*/
+		/*The prime factors of 13195 are 5, 7, 13 and 29.
+		What is the largest prime factor of the number 600851475143 ?*/
 
-	/*This solution works on the premise of if you keep dividing off the smallest factors until you 
-	reach a prime number, that number will be the largest prime factor*/
+		/*This solution works on the premise of if you keep dividing off the smallest factors until you 
+		reach a prime number, that number will be the largest prime factor*/
 
 		long largeNum = 600851475143L;
 		long smallFactor = 0;
@@ -28,7 +28,7 @@ public class Problem3{
 	{
 		long smallFactor = 1;
 
-		for(int i = 2; i < num; i++)
+		for(int i = 2; i < (num/2); i++)
 		{
 			if((num%i) == 0)
 			{
